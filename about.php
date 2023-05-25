@@ -21,14 +21,9 @@
   
   <?php include 'pages\navbar\navbar.html'; ?>
 
-  <!-- landing content -->
-  <?php include 'pages\home\landing.php'; ?>
-
   <!-- Your page content -->
   <?php include 'pages\about\about.html'; ?>
 
-  <!-- text acak -->
-  <?php include 'textacak.php'; ?>
 
   <!-- Include footer -->
   <?php include 'pages\footer\footer.html'; ?>
