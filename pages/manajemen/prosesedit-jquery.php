@@ -1,15 +1,17 @@
 <?php
-    $id = $_GET['id'];
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $id_product = $_GET['id_product'];
+    $name = $_POST['name'];
+    $Image = $_POST['Image'];
+    $price = $_POST['price'];
+    $status = $_POST['status'];
+    $id_category = $_POST['id_category'];
+
 
     print_r($_POST);
-    include_once("connect.php");
+    include_once("database/connect.php");
 
-    $result = mysqli_query($conn, "UPDATE `customer` SET first_name = '$first_name', last_name = '$last_name', email = '$email', phone = '$phone', address = '$address' WHERE id = '$id';");
 
-    header("Location:customer-jquery.php");
-?>
+    $result = mysqli_query($conn, "UPDATE `products` SET name = '$name', Image = '$Image', price = '$price', status = '$status', id_category = '$id_category' WHERE id_product = '$id_product';");
+
+    header("manajemen.php");
+    ?>
