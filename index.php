@@ -21,13 +21,11 @@
   <?php include 'pages\navbar\navbar.html'; ?>
 
   <!-- landing content -->
-  <?php include 'pages\home\landing.php'; ?>
+  <?php include 'pages\home\landing.html'; ?>
 
 
   <!-- Your page content -->
   <?php include 'pages\home\home.php'; ?>
-
-  <?php include 'textacak.php'; ?>
 
   <!-- Include footer -->
   <?php include 'pages\footer\footer.html'; ?>
