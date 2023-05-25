@@ -11,24 +11,25 @@
         </head>
 
         <?php
-                include_once("connect.php");
-                $id = $_GET['id'];
+                include_once("database/connect.php");
 
-                $query = mysqli_query($conn, "SELECT * FROM customer WHERE id='$id'");
+                $id_product = $_GET['id_product'];
+
+                $query = mysqli_query($conn, "SELECT * FROM products WHERE id_product='$id_product'");
 
                 while ($row = mysqli_fetch_array($query)) {
-                        $first_name = $row['first_name'];
-                        $last_name = $row['last_name'];
-                        $email = $row['email'];
-                        $phone = $row['phone'];
-                        $address = $row['address'];
+                        $name = $row['name'];
+                        $Image = $row['Image'];
+                        $price = $row['price'];
+                        $status = $row['stat$status'];
+                        $id_category = $row['id_category'];
                 }
         ?>
 
         <body>
                 <!-- Menampilkan data order dan customer dalam tabel menggunakan bootstrap -->
                 <div class="container"> <br /> <br />
-                        <form id="customerForm" action="prosesedit-jquery.php?id=<?php echo $id; ?>" method="post">
+                        <form id="customerForm" action="prosesedit-jquery.php?id_product=<?php echo $id_product; ?>" method="post">
                                 <table class="table table-striped">
                                         <thead>
                                                 <tr>
@@ -38,27 +39,27 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>first name</td>
-                                                        <td><input type="text" name="first_name" value="<?php echo $first_name; ?>" class="required"></td>
+							<td>nama baju</td>
+                                                        <td><input type="text" name="name" value="<?php echo $name; ?>" class="required"></td>
                                                 </tr>
                                                 <tr>
-                                                        <td>last name</td>
-                                                        <td><input type="text" name="last_name" value="<?php echo $last_name; ?>" class="required"></td>
+							<td>link image</td>
+                                                        <td><input type="text" name="Image" value="<?php echo $Image; ?>" class="required"></td>
                                                 </tr>
-                                                <tr>
-                                                        <td>email</td>
-                                                        <td><input type="text" name="email" value="<?php echo $email; ?>" class="required"></td>
+                                                						<tr>
+							<td>price</td>
+                                                        <td><input type="text" name="price" value="<?php echo $price; ?>" class="required"></td>
                                                 </tr>
-                                                <tr>
-                                                        <td>phone</td>
-                                                        <td><input type="text" name="phone" value="<?php echo $phone; ?>" class="required"></td>
+                                                						<tr>
+							<td>status</td>
+                                                        <td><input type="text" name="status" value="<?php echo $status; ?>" class="required"></td>
                                                 </tr>
-                                                <tr>
-                                                        <td>address</td>
-                                                        <td><input type="text" name="address" value="<?php echo $address; ?>" class="required"></td>
+                                                						<tr>
+							<td>kategori</td>
+                                                        <td><input type="text" name="id_category" value="<?php echo $id_category; ?>" class="required"></td>
                                                 </tr>
-                                                <tr>
-                                                        <td></td>
+                                                						<tr>
+							<td></td>
                                                         <td><input type="submit" name="Submit" value="edit" class="btn btn-danger"></td>
                                                 </tr>
                                         </tbody>
