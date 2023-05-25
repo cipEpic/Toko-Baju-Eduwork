@@ -1,11 +1,11 @@
 <?php
 
-    include_once("connect.php");
+include_once("database\connect.php");
 
-    $id = $_GET['id'];
+    $id_product = $_GET['id_product'];
 
 
-    $result = mysqli_query($conn, "DELETE FROM customer WHERE id='$id'");
+    $result = mysqli_query($conn, "DELETE FROM products WHERE id_product='$id_product'");
 
-    header("Location:customer-jquery.php");
+    header("pages\manajemen\products-jquery.php");
 ?>
