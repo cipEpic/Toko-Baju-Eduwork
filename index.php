@@ -28,7 +28,7 @@
   <?php include 'pages\home\home.php'; ?>
 
   <?php include 'pages\home\quote.html'; ?>
-  <?php include 'pages\home\logoSlider.html'; ?>
+  <!-- <?php include 'pages\home\logoSlider.html'; ?> -->
   
 
   <!-- Include footer -->
