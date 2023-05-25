@@ -1,6 +1,7 @@
 <!-- connect ke database -->
 <?php
-    include "database\connect.php";
+   include_once("database/connect.php");
+
 
     $query = mysqli_query($conn, "SELECT * FROM products");
 ?>
@@ -21,7 +22,7 @@
     <!-- Menampilkan data order dan customer dalam tabel menggunakan bootstrap -->
     <div class="container">
         <br /><br />
-        <a class="btn btn-danger" href="tambah-jquery.php">Tambah products</a>
+        <a class="btn btn-danger" href="pages/manajemen/tambah-jquery.php">Tambah products</a>
         <br /><br />
         <table id="productsTable" class="table table-striped">
             <thead>
@@ -41,8 +42,8 @@
                         <td><img src="<?php echo $row['Image']; ?>" alt="<?php echo $row['name']; ?>" height="50"></td>
                         <td><?php echo $row['price']; ?></td>
                         <td><?php echo $row['status']; ?></td>
-                        <td><a class="btn btn-primary" href="edit-jquery.php?id_product=<?php echo $row['id_product']; ?>">Edit</a></td>
-                        <td><a class="btn btn-danger" href="delete.php?id_product=<?php echo $row['id_product']; ?>">Delete</a></td>
+                        <td><a class="btn btn-primary" href="pages/manajemen/edit-jquery.php?id_product=<?php echo $row['id_product']; ?>">Edit</a></td>
+                        <td><a class="btn btn-danger" href="pages/manajemen/delete.php?id_product=<?php echo $row['id_product']; ?>">Delete</a></td>
                     </tr>
                 <?php } ?>
             </tbody>
