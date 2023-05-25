@@ -1,14 +1,15 @@
 <?php
 
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $name = $_POST['name'];
+    $image = $_POST['Image'];
+    $price = $_POST['price'];
+    $status = $_POST['status'];
+    $id_category = $_POST['id_category'];
 
-    include_once("connect.php");
+    include_once("database/connect.php");
 
-    $result = mysqli_query($conn, "INSERT INTO `customer`(`first_name`, `last_name`, `email`, `phone`, `address`) VALUES ('$first_name','$last_name','$email','$phone','$address');");
 
-    header("Location:customer-jquery.php");
+    $result = mysqli_query($conn, "INSERT INTO `products`(`name`, `Image`, `price`, `status`, `id_category`) VALUES ('$name','$Image','$price','$status','$id_category');");
+
+    header("manajemen.php");
 ?>
