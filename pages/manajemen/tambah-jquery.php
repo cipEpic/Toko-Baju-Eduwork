@@ -22,24 +22,24 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>first name</td>
-							<td><input type="text" name="first_name" data-name="First Name" class="required"></td>
+							<td>nama baju</td>
+							<td><input type="text" name="name" data-name="name" class="required"></td>
 						</tr>
 						<tr>
-							<td>last name</td>
-							<td><input type="text" name="last_name" data-name="Last Name" class="required"></td>
+							<td>link image</td>
+							<td><input type="text" name="Image" data-name="Image" class="required"></td>
 						</tr>
 						<tr>
-							<td>email</td>
-							<td><input type="text" name="email" data-name="Email" class="required"></td>
+							<td>price</td>
+							<td><input type="text" name="price" data-name="price" class="required"></td>
 						</tr>
 						<tr>
-							<td>phone</td>
-							<td><input type="text" name="phone" data-name="Phone" class="required"></td>
+							<td>status</td>
+							<td><input type="text" name="status" data-name="status" class="required"></td>
 						</tr>
 						<tr>
-							<td>address</td>
-							<td><input type="text" name="address" data-name="Address" class="required"></td>
+							<td>kategori</td>
+							<td><input type="text" name="id_category" data-name="Kategori" class="required"></td>
 						</tr>
 						<tr>
 							<td></td>
