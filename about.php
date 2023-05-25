@@ -22,8 +22,9 @@
   <?php include 'pages\navbar\navbar.html'; ?>
 
   <!-- Your page content -->
+  <?php include 'pages\about\aboutproject.html'; ?>
   <?php include 'pages\about\about.html'; ?>
-
+  <?php include 'pages\about\contactsect.html'; ?>
 
   <!-- Include footer -->
   <?php include 'pages\footer\footer.html'; ?>
