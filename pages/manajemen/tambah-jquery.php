@@ -9,6 +9,9 @@
 		<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap4.min.css">
 		<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
 	</head>
+
+	  <!-- Include navbar -->
+	  <?php include 'pages\navbar\navbar.html'; ?>
 	<body>
 		<!-- Menampilkan data order dan customer dalam tabel menggunakan bootstrap -->
 		<div class="container"> <br /> <br />
@@ -83,5 +86,7 @@
 				});
 			});
 		</script>
+		  <!-- Include footer -->
+		  <?php include 'pages\footer\footer.html'; ?>
 	</body>
 </html>
