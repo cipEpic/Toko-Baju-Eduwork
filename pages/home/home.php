@@ -25,35 +25,6 @@ include "database/connect.php";
       object-fit: cover;
       margin-bottom: 10px;
     }
-
-    /* .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: black;
-      border-radius: 50%;
-      width: 20px;
-      height: 20px;
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      width: 50px;
-      height: 50px;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 50%;
-      opacity: 0.7;
-    }
-
-    .carousel-control-prev:hover,
-    .carousel-control-next:hover {
-      opacity: 1;
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      background-color: #fff;
-      padding: 5px;
-      margin-top: -3px;
-    } */
   </style>
 </head>
 
@@ -116,18 +87,6 @@ include "database/connect.php";
         }
         ?>
       </div>
-      <!-- <div class="d-flex justify-content-center">
-        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        
-      </div> -->
-      
       <div class="">
         <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
           <span class="circle-icon"></span>
