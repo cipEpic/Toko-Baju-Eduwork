@@ -3,7 +3,7 @@
 include "database/connect.php";
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html id="subscribe">
 <html>
 
 <head>
@@ -14,6 +14,9 @@ include "database/connect.php";
     .product-card {
       text-align: center;
       margin-bottom: 20px;
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 5px;
     }
 
     .product-image {
@@ -22,14 +25,43 @@ include "database/connect.php";
       object-fit: cover;
       margin-bottom: 10px;
     }
+
+    /* .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: black;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 1;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #fff;
+      padding: 5px;
+      margin-top: -3px;
+    } */
   </style>
 </head>
 
 <body>
 
   <!-- Your page content -->
-  <div class="container pt-lg-4">
-    <h2 class="text-center w3-xxxlarge">Products That We Have</h2>
+  <div class="container pt-lg-5">
+    <h2 class="text-center w3-xxxlarge pb-3">Products That We Have</h2>
 
     <div id="productCarousel" class="carousel slide pt-4" data-ride="carousel">
       <div class="carousel-inner">
@@ -53,7 +85,7 @@ include "database/connect.php";
             // Display the product information in each slide
             if ($count % 3 == 0) {
               echo "<div class='carousel-item $activeClass'>";
-              echo "<div class='row'>";
+              echo "<div class='row justify-content-center'>";
             }
 
             echo "<div class='col-sm-4'>";
@@ -84,6 +116,18 @@ include "database/connect.php";
         }
         ?>
       </div>
+      <!-- <div class="d-flex justify-content-center">
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        
+      </div> -->
+      
       <div class="">
         <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
           <span class="circle-icon"></span>
@@ -99,14 +143,13 @@ include "database/connect.php";
       <style>
         .circle-icon {
           position: absolute;
-          width: 40px;
-          height: 40px;
+          width: 50px;
+          height: 50px;
           background-color: black;
           border-radius: 50%;
           z-index: -1;
         }
       </style>
-
     </div>
   </div>
 
