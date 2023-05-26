@@ -10,6 +10,8 @@
                 <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap4.min.js"></script>
         </head>
 
+          <!-- Include navbar -->
+  <?php include 'pages\navbar\navbar.html'; ?>
         <?php
                 include_once("database/connect.php");
 
@@ -100,5 +102,8 @@
                         });
                         });
                 </script>
+
+                  <!-- Include footer -->
+  <?php include 'pages\footer\footer.html'; ?>
         </body>
 </html>
