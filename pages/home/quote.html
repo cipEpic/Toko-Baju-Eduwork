@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     .quote-section {
-      background-color: #f8f9fa;
-      padding: 80px 0;
+      background-color: #F1F1F1;
+      padding: 180px 0;
       text-align: center;
+      height: 60px; /* Adjust the height as needed */
+      overflow: hidden;
     }
 
     .quote-text {
       font-size: 28px;
       font-weight: bold;
       margin-bottom: 20px;
+      display: inline-block;
     }
   </style>
 </head>
@@ -23,11 +26,37 @@
 <body>
   <div class="quote-section">
     <div class="container">
-      <div class="quote-text">
-        BE INSPIRED. GET AHEAD OF TRENDS.
+      <div class="quote-text" id="typing-effect">
+        <!-- Placeholder text for animation -->
       </div>
     </div>
   </div>
+
+  <script>
+    // Text to be animated
+    var text = "BE INSPIRED. GET AHEAD OF FASHION TRENDS.";
+    var index = 0;
+    var direction = 1; // 1 for typing forward, -1 for typing backward
+
+    function typeWriter() {
+      document.getElementById("typing-effect").innerHTML = text.substr(0, index);
+      index += direction;
+
+      if (index === text.length + 1) {
+        direction = -1; // Change direction to type back
+        index = text.length;
+        setTimeout(typeWriter, 500); // Delay before typing back, in milliseconds
+      } else if (index === -1) {
+        direction = 1; // Change direction to type forward
+        index = 0;
+        setTimeout(typeWriter, 500); // Delay before typing forward, in milliseconds
+      } else {
+        setTimeout(typeWriter, 100); // Delay between each character, in milliseconds
+      }
+    }
+
+    typeWriter(); // Start the animation
+  </script>
 </body>
 
 </html>
