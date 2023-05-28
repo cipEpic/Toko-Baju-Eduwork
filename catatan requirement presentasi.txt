@@ -1,0 +1,5 @@
+- Perkenalan diri
+- Web yang dibuat (web catalog toko baju)
+- Menunjukkan Database ( 4 table saling berelasi)
+- Menunjukkan Link Github
+- Menjelaskan halaman (Home, About, Manajemen data)
