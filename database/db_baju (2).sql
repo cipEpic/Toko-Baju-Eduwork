@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 09:44 AM
+-- Generation Time: May 28, 2023 at 08:12 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -64,7 +64,7 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id_product`, `name`, `Image`, `price`, `status`, `id_category`) VALUES
-(1, 'Baju Polo', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/10028.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230525%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230525T175332Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=26e287ee3d58909e0edbbb6221b50c4c5173c4e161882400a11348e3a106ab9dba82064b06dfb71b85a42c7dd990b56eeb32a447cfdd3889f2fbd8679841cf7542d573d32262f3811140e441e485fe17ce29df309e287c62ce0c00f5e73ecf518a3b742806ddaed33f94789555c2b82405ff8fa3bad426b0e8af207e3096c7bf4e04b9906f395370ef4b6514b137e60a7026e6f0c6eebf51ed6cee4a781570af71c97f65d87cec4078b28a38c4f9e78ad72dccb1acf2ff5e6a762806deb03638ec94d44aab9be7e8398faff45cb71890169c8109bedbe282c6fce52c81f2522a3e351208ddefb2f34df35bd1025ffd1a02040562738ce320872a92ea325042e3', '100.00', 'available', 1),
+(1, 'Baju Polo', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/10028.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230525%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230525T175332Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=26e287ee3d58909e0edbbb6221b50c4c5173c4e161882400a11348e3a106ab9dba82064b06dfb71b85a42c7dd990b56eeb32a447cfdd3889f2fbd8679841cf7542d573d32262f3811140e441e485fe17ce29df309e287c62ce0c00f5e73ecf518a3b742806ddaed33f94789555c2b82405ff8fa3bad426b0e8af207e3096c7bf4e04b9906f395370ef4b6514b137e60a7026e6f0c6eebf51ed6cee4a781570af71c97f65d87cec4078b28a38c4f9e78ad72dccb1acf2ff5e6a762806deb03638ec94d44aab9be7e8398faff45cb71890169c8109bedbe282c6fce52c81f2522a3e351208ddefb2f34df35bd1025ffd1a02040562738ce320872a92ea325042e3', '100.00', 'not_available', 1),
 (2, 'Kemeja Putih', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/10190.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T060156Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=6a5dccdc5c28ed33b67701556bcb87f6088642a00ae1479b626a8a7f607c232e9b88d7acd12d7cb8dc9f5a42f6114ce271b06f7257830f873874fe7a2939676d56e54ff12b9d399e0a9e773eef8ef5a79dfbcde819d0cc9c155b0b4db0c0e2c1a9d40b8530fc6d9a5d2ca2cc7dcd1c9fbacdae29e660650bd2380596c150704e960a939975c221d050a44b0caf5c97b67de7305bcef4663030281a45b02c6c354373a6a913f7a81d363b65f4994ea2a565e4d7c591ed39aabef0951402b7e03c01784b53a0cb77cbf5a5e9086769803f96a76f746f0a31406d0166c76b19cdfde8c98cf1d92a8d69bf402259fd7f3dfa00138019cff42c5b7d64acbb2f403bb5', '80.00', 'available', 1),
 (3, 'Celana Jeans', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/10438.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T072811Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=435e3e5963d6b001cd2297d16b8803be29a43f57fa47fa54b8a7ef871db6553e88c9c64599e1412df66af854309e3b5ac98e6eae418f5b326f92acff19170762cdfdcb809adcc27dd0b3aabaa5eee1a56390e0fcc7f60bd3aaefd3bcc8c3af5d835db5064410d39ccca42bae787982ab5af7f6e9cacef174de889a79b57db13d46696b2f849b8f0465910a9720640d87927f1bb044a10bd5687c4467e8ea27517431614d8c20b2fdfb35aa509ddb738085e0cc3d8fff49cc517b093f8f11918dc36cb51c6013fe8f20519c3e1ccc9ee938cd50ad2df51ad98de2f620e06b249cc6ba21a6600626211e3ae38cab72a7517019bc8f482724e113189ee889b88b1a', '120.00', 'available', 2),
 (4, 'Baju Kaos', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/10411.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T072806Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=7ed554d631af806c53920133397235dcdc0548496a79dfa4e6fb785aba89b9b105d99df3fedd8a516953e4c3976246b70a6b0e8d7fdb68bc74280f3030eea026a356b298668450b73de5da5b0a009d4bede9cb10e30ced0a04e83731074d8a55def8896585ec46e41e6379d8c6a26ab55f16699ffa1eb24444507ecfb61b0b016b8787214566b58a70deb1f452a6af2cc6b05053fd1e723d3d699823da76bb674a94a99e73bfa0a552d2fd59232a2f5b6bda5c250a07020cea350c302e02bdf67fb7358000689d5ae7702e8dd66c14a820470abca408ba1967e2beaeb68d846105412c498cf8bc93ba28614cd304783b333ec7be8fe37dee2c558a63aaa38449', '60.00', 'available', 1),
@@ -82,7 +82,11 @@ INSERT INTO `products` (`id_product`, `name`, `Image`, `price`, `status`, `id_ca
 (16, 'Sweater Biru', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/11171.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T073258Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=4fac5036e9ac126dbe4ccc867c1439d7aff6fcb5ae54ea661826f1e6b0164f58603b9f6a1d0618e5050e1abb257dd88f23b50632a9cb9176c9ff5746f24b5f0bd0df85b84e10a0f4492299cfcf118fd772df992354706b0ea9faa7af67c09b99b81febb6f86f82aa696d7c459ad84468130e68b9ff9d8295de9ca73eac3ecce81de950e1f5f56dbbb469369647c1e711354cae49c9242998a6d70a8a4cda59c2eb8bbf104dff6b9189996e45fd94baa621cee7a3ff4dc6363c22eae21a8b98c7bb80caf86755db1f4e0e8ced0b264dae6a374d6e9bb3b710362597d751a0806ba928c609329f2cdf206923c487a41d5d354f5dabc4c07b2424643854f10a2c44', '85.00', 'available', 1),
 (17, 'Celana Jeans Maxi', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/11237.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T073308Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=10c0cb8dedcd67f724a7dbce90fa76c245d1fc000c04166f4a3cd2085e7b95477849b6bdd7e47a1ad8ec49dda42f69ecf353a0922870a31c70cbef9709546b9cf096b325c99182ffdbd2bba24b086cfc78a7cbe9c860cee4bfb57d28c49912a52f03c89129c396caab843717283f2770e6c30b07880c5faf43c313d3ecb9913ee53539ea87482c9d5ff176959b7b9d6d1aae485109c756e764292f51758c16900558e5656d8abe743291bed3a84cd72e90d6df50cd1eeb89314fb5ca8d409f74c36978a4005aadddb18afcb45062903f5a046c1e62c443d713a1467f12dbfd054637edc012d109ace733a70f9472817a9e458489b873cfffab56cceb84ae23d3', '110.00', 'available', 2),
 (19, 'Sweater hitam merah', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/11173.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T073258Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=709c50ef7a5fe14e5b0cfc16ca887ee6d7d2b51cf88f2691996a94924072a654f14d2618e71c164378bc624c4e0cde599f7b319934b5c0f1b8fa4c2fdc1b8c1bacadf936a8316bf5b2025998cc44ce01800ba89138e28b793e3ed00176ffc933b847b1e01c99a8f95b5043815766e79f76f38e6952ced2d229a74a4c5f196824e2307aad9c056a2e9e356fee1b15450e3bb5b85e1244d6005d380118d1acedd656d80cc15a3b01841b003c058e1be5fadd8ff8c5ee17353b8fe12e82ae9b74fb2dfda63af135f17603deaae7928f107f503fba8127903d8689b93529fa5a21d0c56a9c0678faa4b2ed84208a956c248bb6383832ae382327558e5ece207812e0', '120.00', 'available', 1),
-(20, 'Cardigan Panjang', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/11368.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T073345Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2be2a5b03eb26da41b78a07f09b1cf4a6d6faf9ffedbb5a167b9112ca5221e1db761a121924111fac51a607f84d30f60d3ad5d3c7a1e2e89af8499a1ebf1575d7cf13c1ae78e8192c4289a6e91c94feebfc1f39c1d7d56c2f52e77fa30e0c3a7f536ee1ab29239a27a6ac610d5cb65d8efc73e03c06a73523a2b839ed51d40198e127bccb3e1c14ea2dbdef70ca44d55856146380ad2ba79a64d3d4067f1536b242d71ac3c2abd0c0174c7c35ce0b5aee62c19314cb5dc5e83f502f5c697970ff0d808ac8f9056f1585ce74bc72447bbb19713e12cddb3c3230a2d053ed0bba647bad01f3e5ba3771f68f7eea3e3682694bac6e1f8ebb8a503d6f2e52dff73a5', '95.00', 'available', 2);
+(20, 'Cardigan Panjang', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/11368.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230526%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230526T073345Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=2be2a5b03eb26da41b78a07f09b1cf4a6d6faf9ffedbb5a167b9112ca5221e1db761a121924111fac51a607f84d30f60d3ad5d3c7a1e2e89af8499a1ebf1575d7cf13c1ae78e8192c4289a6e91c94feebfc1f39c1d7d56c2f52e77fa30e0c3a7f536ee1ab29239a27a6ac610d5cb65d8efc73e03c06a73523a2b839ed51d40198e127bccb3e1c14ea2dbdef70ca44d55856146380ad2ba79a64d3d4067f1536b242d71ac3c2abd0c0174c7c35ce0b5aee62c19314cb5dc5e83f502f5c697970ff0d808ac8f9056f1585ce74bc72447bbb19713e12cddb3c3230a2d053ed0bba647bad01f3e5ba3771f68f7eea3e3682694bac6e1f8ebb8a503d6f2e52dff73a5', '95.00', 'available', 2),
+(31, 'White Skirt', 'https://storage.googleapis.com/kagglesdsdata/datasets/139630/329006/fashion-dataset/images/10000.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=databundle-worker-v2%40kaggle-161607.iam.gserviceaccount.com%2F20230524%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20230524T084832Z&X-Goog-Expires=345600&X-Goog-SignedHeaders=host&X-Goog-Signature=1cde7993e3ab849443b6db7cc4d5a3349ef003f33e0aab996dde9a9895a3bb2c73f9c4bcd5ec1e48c7d161eba2f34c7f162bafe49953b55777a58a836556a10907a77c5ae23beccdce6566433be86859ac830cd425da855dfddd1872ee56f1399213d91928ebc3ae05c5191bbe124e9ce0e08b0bb6205c6f97ff50e63d297fd8dfa960d5ab07e0a607941766d5b1ed990e5f2c4dfcb86c4ee765fff6de83dcdfdfc7096110b353cea3adfdcceac523234af8f7f4e8ede63ef8b62ede77880d9d33e2e183d09fb951b4691c2514200fd15757aefd80e72c5b14e43e5a1a57645e5ad6d0edcd11761009de4adae6a9af996ce77e44b95ded8fdfb0dec25267a8f3', '80.00', 'available', 3),
+(34, 'Baju Vestia Zeta ver 3', 'https://cdn.kingteeshops.com/image/2022/05/14/vestia-zeta-holoid-classic-t-shirt-unisex-hoodie.jpg', '80.00', 'available', 1),
+(36, 'baju puspita', 'https://cf.shopee.co.id/file/5f64ac2033d28c0e7d0a77fcf4203f8b', '12.00', 'restock', 3),
+(38, 'baju mona hoshinova1', 'https://cf.shopee.co.id/file/8b81de9964f9bdcff1920f1d66be8d8c_tn', '10.00', 'available', 1);
 
 -- --------------------------------------------------------
 
@@ -107,8 +111,6 @@ INSERT INTO `product_size` (`id`, `id_product`, `size_id`) VALUES
 (4, 2, 3),
 (5, 3, 1),
 (6, 3, 2),
-(7, 4, 2),
-(8, 4, 3),
 (9, 5, 1),
 (10, 5, 2),
 (11, 6, 2),
@@ -120,7 +122,14 @@ INSERT INTO `product_size` (`id`, `id_product`, `size_id`) VALUES
 (17, 9, 2),
 (18, 9, 3),
 (19, 10, 1),
-(20, 10, 2);
+(20, 10, 2),
+(28, 34, 1),
+(29, 34, 2),
+(30, 34, 3),
+(31, 34, 4),
+(32, 34, 5),
+(35, 38, 1),
+(42, 4, 4);
 
 -- --------------------------------------------------------
 
@@ -189,13 +198,13 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_product` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `product_size`
 --
 ALTER TABLE `product_size`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `size`
