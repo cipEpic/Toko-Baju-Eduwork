@@ -21,7 +21,8 @@
   <?php include 'pages\navbar\navbar.html'; ?>
 
   <!-- Your page content -->
-  <?php include 'pages\manajemen\products-jquery.php'; ?>
+  <?php include 'products-jquery.php'; ?>
+
 
   <!-- Include footer -->
   <?php include 'pages\footer\footer.html'; ?>
