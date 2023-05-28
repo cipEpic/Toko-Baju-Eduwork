@@ -22,5 +22,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-header("manajemen.php");
+header("location:manajemen.php");
 ?>
