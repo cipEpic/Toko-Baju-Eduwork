@@ -14,21 +14,24 @@
 
 ## Pages
    ### about
-   1. products-jquery.php
-   2. tambah-jquery.php
-   3. prosestambah-jquery.php
-   4. edit-jquery.php
+   1. about.html
+   2. aboutproject.html
+   3. contactsect.html
+   4. sendemail.php
    ### footer
-   
+   1. footer.html
    ### home
-   1. products-jquery.php
-   2. tambah-jquery.php
-   3. prosestambah-jquery.php
+   1. home.php
+   2. landing.html
+   3. quote.html
    ### navbar
-   1. products-jquery.php
+   1. navbar.html
+
 ## Public
+   - Berisi logo dari proyek web catalog ini
 
 ## Styles
+1. global.css
 
 ## File Manajemen CRUD (Admin)
 1. products-jquery.php
