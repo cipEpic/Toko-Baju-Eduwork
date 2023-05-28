@@ -63,82 +63,82 @@
                     </div>
                 </div>
 				<!-- /.container-fluid -->
-            </section>
+    </section>
 
-            <div class="row">
-                        <div class="col-12">
+    <div class="row">
+        <div class="col-12">
 			<div class="card p-lg-5">
-                                <div class="card-header">
-                                    <h3 class="card-title">Edit Products</h3>
-                                </div>
+                <div class="card-header">
+                    <h3 class="card-title">Edit Products</h3>
+                </div>
                                 
-        <form id="customerForm" action="prosesedit-jquery.php?id_product=<?php echo $id_product; ?>" method="post">
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Nama Data</th>
-                        <th>Input Data</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>nama baju</td>
-                        <td><input type="text" name="name" value="<?php echo $name; ?>" class="required"></td>
-                    </tr>
-                    <tr>
-                        <td>link image</td>
-                        <td><input type="text" name="Image" value="<?php echo $Image; ?>" class="required"></td>
-                    </tr>
-                    <tr>
-                        <td>price</td>
-                        <td><input type="text" name="price" value="<?php echo $price; ?>" class="required"></td>
-                    </tr>
-                    <tr>
-                        <td>status</td>
-                        <td>
-                            <select name="status" data-name="status" class="required">
-                                <option value="available">available</option>
-                                <option value="not_available">not_available</option>
-								<option value="restock">restock</option>
-                            </select>
-                        </td>
-                    </tr>
-                        <td>kategori</td>
-                        <td>
-                            <select name="id_category" data-name="Kategori" class="required">
-                                <!-- Populate the options dynamically from your database -->
-                                <?php
-                                    include_once("database/connect.php");
-                                    $categories = mysqli_query($conn, "SELECT * FROM categories");
+            <form id="customerForm" action="prosesedit-jquery.php?id_product=<?php echo $id_product; ?>" method="post">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Nama Data</th>
+                            <th>Input Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>nama baju</td>
+                            <td><input type="text" name="name" value="<?php echo $name; ?>" class="required"></td>
+                        </tr>
+                        <tr>
+                            <td>link image</td>
+                            <td><input type="text" name="Image" value="<?php echo $Image; ?>" class="required"></td>
+                        </tr>
+                        <tr>
+                            <td>price</td>
+                            <td><input type="text" name="price" value="<?php echo $price; ?>" class="required"></td>
+                        </tr>
+                        <tr>
+                            <td>status</td>
+                            <td>
+                                <select name="status" data-name="status" class="required">
+                                    <option value="available">available</option>
+                                    <option value="not_available">not_available</option>
+                                    <option value="restock">restock</option>
+                                </select>
+                            </td>
+                        </tr>
+                            <td>kategori</td>
+                            <td>
+                                <select name="id_category" data-name="Kategori" class="required">
+                                    <!-- Populate the options dynamically from your database -->
+                                    <?php
+                                        include_once("database/connect.php");
+                                        $categories = mysqli_query($conn, "SELECT * FROM categories");
 
-                                    while ($row = mysqli_fetch_assoc($categories)) {
-                                        echo '<option value="' . $row['id_category'] . '">' . $row['name'] . '</option>';
+                                        while ($row = mysqli_fetch_assoc($categories)) {
+                                            echo '<option value="' . $row['id_category'] . '">' . $row['name'] . '</option>';
+                                        }
+                                    ?>
+                                </select>
+                            </td>
+                        </tr>
+                            <td>size</td>
+                            <td>
+                                <?php
+                                    $sizes = mysqli_query($conn, "SELECT * FROM size");
+                                    while ($row = mysqli_fetch_assoc($sizes)) {
+                                        echo '<input type="checkbox" name="sizes[]" value="' . $row['size_id'] . '">' . $row['name'] . '<br>';
                                     }
                                 ?>
-                            </select>
-                        </td>
-                    </tr>
-
-    <td>size</td>
-    <td>
-        <?php
-            $sizes = mysqli_query($conn, "SELECT * FROM size");
-            while ($row = mysqli_fetch_assoc($sizes)) {
-                echo '<input type="checkbox" name="sizes[]" value="' . $row['size_id'] . '">' . $row['name'] . '<br>';
-            }
-        ?>
-    </td>
-</tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" name="Submit" value="edit" class="btn btn-danger"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </form>
-    </div>
-    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" name="Submit" value="edit" class="btn btn-danger"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            </div>
+        </div>
 	</div>
+    
     <script>
         $(document).ready(function() {
             $('#customerForm').submit(function(e) {

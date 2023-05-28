@@ -49,42 +49,42 @@
                                 <div class="card-body">
                                     <a href="tambah-jquery.php" class="btn btn-info" role="button">ADD CLOTHES</a>
                                     <table id="example1" class="table table-bordered table-striped">
-                                    <thead>
-                <tr>
-                    <th>Nama produk</th>
-                    <th>Image</th>
-                    <th>Price</th>
-                    <th>Status</th>
-                    <th>Category</th>
-                    <th>Sizes</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php while ($row = mysqli_fetch_assoc($query)) { ?>
-                    <tr>
-                        <td><?php echo $row['name']; ?></td>
-                        <td class="text-center"><img src="<?php echo $row['Image']; ?>" alt="<?php echo $row['name']; ?>" height="50"></td>
-                        <td><?php echo $row['price']; ?></td>
-                        <td><?php echo $row['status']; ?></td>
-                        <td><?php echo $row['category_name']; ?></td>
-                        <td><?php echo $row['size_names']; ?></td>
-                        <td class="text-center">
-                        <a class="btn btn-primary" href="edit-jquery.php?id_product=<?php echo $row['id_product']; ?>">Edit</a>
-                        <a class="btn btn-danger" href="delete.php?id_product=<?php echo $row['id_product']; ?>">Delete</a>
-                                                    </td>
-                    </tr>
-                <?php } ?>
-            </tbody>
+                                        <thead>
+                                            <tr>
+                                                <th>Nama produk</th>
+                                                <th>Image</th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                                <th>Category</th>
+                                                <th>Sizes</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php while ($row = mysqli_fetch_assoc($query)) { ?>
+                                                <tr>
+                                                    <td><?php echo $row['name']; ?></td>
+                                                    <td class="text-center"><img src="<?php echo $row['Image']; ?>" alt="<?php echo $row['name']; ?>" height="50"></td>
+                                                    <td><?php echo $row['price']; ?></td>
+                                                    <td><?php echo $row['status']; ?></td>
+                                                    <td><?php echo $row['category_name']; ?></td>
+                                                    <td><?php echo $row['size_names']; ?></td>
+                                                    <td class="text-center">
+                                                    <a class="btn btn-primary" href="edit-jquery.php?id_product=<?php echo $row['id_product']; ?>">Edit</a>
+                                                    <a class="btn btn-danger" href="delete.php?id_product=<?php echo $row['id_product']; ?>">Delete</a>
+                                                                                </td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
                                         <tfoot>
                                             <tr>
                                             <th>Nama produk</th>
-                    <th>Image</th>
-                    <th>Price</th>
-                    <th>Status</th>
-                    <th>Category</th>
-                    <th>Sizes</th>
-                                                <th>Action</th>
+                                            <th>Image</th>
+                                            <th>Price</th>
+                                            <th>Status</th>
+                                            <th>Category</th>
+                                            <th>Sizes</th>
+                                            <th>Action</th>
                                             </tr>
                                         </tfoot>
                                     </table>
@@ -103,28 +103,27 @@
         </div>
 
 
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<script src="plugins/jquery-validation/jquery.validate.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- DataTables  & Plugins -->
-<script src="plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
 
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
-<script>
-  $(function () {
-    $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false
-    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-  });
-</script>
-
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <script>
+    $(function () {
+        $("#example1").DataTable({
+        "responsive": true, "lengthChange": false, "autoWidth": false
+        }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    });
+    </script>
 
 </body>
 </html>
