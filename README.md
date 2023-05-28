@@ -4,4 +4,5 @@
 3. Tools yang digunakan Vscode dan XAMPP localhost PhpMyAdmin
 
 # Penjelasan File tiap Folder
-##
+## Database
+### Berisi database Mysql untuk menyimpan data products, relasi dan tabel dapat dilihat pada gambar database\tabel-database-db_baju.png
