@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+    <head>
         <title>toko baju eduwork</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
@@ -13,21 +13,21 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
         <link rel="stylesheet" href="styles\global.css">
         <link rel="icon" type="image/x-icon" href="public\favicon.ico">
-        
     </head>
-<body>
 
-  <!-- Include navbar -->
-  
-  <?php include 'pages\navbar\navbar.html'; ?>
+    <body>
 
-  <!-- Your page content -->
-  <?php include 'pages\about\aboutproject.html'; ?>
-  <?php include 'pages\about\about.html'; ?>
-  <?php include 'pages\about\contactsect.html'; ?>
+      <!-- Include navbar -->
+      <?php include 'pages\navbar\navbar.html'; ?>
 
-  <!-- Include footer -->
-  <?php include 'pages\footer\footer.html'; ?>
+      <!-- Your page content -->
+      <?php include 'pages\about\aboutproject.html'; ?>
+      <?php include 'pages\about\about.html'; ?>
+      <?php include 'pages\about\contactsect.html'; ?>
 
-</body>
+      <!-- Include footer -->
+      <?php include 'pages\footer\footer.html'; ?>
+
+    </body>
+    
 </html>
