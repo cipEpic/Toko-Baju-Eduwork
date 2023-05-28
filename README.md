@@ -3,7 +3,7 @@
 2. Menggunakan HTML, CSS, Js (internal), manajemen database dengan MySQL phpMyAdmin.
 3. Tools yang digunakan Vscode dan XAMPP localhost PhpMyAdmin.
 
-# Penjelasan File tiap Folder dan Files
+# Penjelasan File tiap Folder
 ## Database
 1. Berisi database Mysql untuk menyimpan data products, relasi dan tabel dapat dilihat pada gambar database\tabel-database-db_baju.png.
 2. Import db_baju(2).sql untuk mendapatkan data yang sudah terisi. (untuk mendapatkan struktur table saja bisa menggunakan database db_baju.sql).
