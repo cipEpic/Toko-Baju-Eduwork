@@ -49,3 +49,6 @@
 ## File Lainnya
 1. README.md -> Penjelasan fitur, file, dan project.
 2. Requirement Tugas.pdf -> Berisi requirement tugas dari project ini
+
+# Foto Product Menggunakan Dataset Kaggle.
+- https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset. 
