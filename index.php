@@ -12,8 +12,8 @@
         <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
         <link rel="stylesheet" href="styles\global.css">
-        
         <link rel="icon" type="image/x-icon" href="public\favicon.ico">
+        
     </head>
 <body>
 
@@ -25,8 +25,9 @@
 
 
   <!-- Your page content -->
+  <!-- ada masalah dg footer bila nambah ini -->
   <?php include 'pages\home\home.php'; ?>
-
+  
   <?php include 'pages\home\quote.html'; ?>
   
 
