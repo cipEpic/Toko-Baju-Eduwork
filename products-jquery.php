@@ -32,8 +32,160 @@
                             </ol>
                         </div>
                     </div>
+                    <!-- Add a share button -->
+                    <div id = "share_button">
+                        <button onclick="sharePost()">Share on Facebook</button>
+                    </div>
                 </div><!-- /.container-fluid -->
             </section>
+            
+                                  
+            <!-- <script>
+            // Load the Facebook SDK asynchronously
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=YOUR_APP_ID&autoLogAppEvents=1";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            // Initialize the SDK
+            window.fbAsyncInit = function() {
+                FB.init({
+                appId      : '265490552822190',
+                cookie     : true,
+                xfbml      : true,
+                version    : 'v12.0'
+                });
+
+                // Check if the user is already logged in
+                FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    // User is logged in and authorized
+                    sharePost();
+                } else {
+                    // User is not logged in, prompt for login
+                    FB.login(function(response) {
+                    if (response.authResponse) {
+                        // User logged in and authorized
+                        sharePost();
+                    } else {
+                        // User cancelled login or did not authorize
+                        console.log('User cancelled login or did not fully authorize.');
+                    }
+                    });
+                }
+                });
+            };
+
+            // Function to share the post
+            function sharePost() {
+                var message = 'Hello, this is a shared post from localhost!';
+                FB.api('/me/feed', 'post', { message: message }, function(response) {
+                if (!response || response.error) {
+                    console.log('Error occurred while sharing the post.');
+                } else {
+                    console.log('Post shared successfully!');
+                }
+                });
+            }
+            </script> -->
+
+            <!-- Load Facebook SDK for JavaScript -->
+            <div id="fb-root"></div>
+                <script>
+                    window.fbAsyncInit = function() {
+                    FB.init({
+                        appId: '265490552822190',
+                        status: true,
+                        cookie: true,
+                        xfbml: true
+                    });
+                    };
+                    (function() {
+                    var e = document.createElement('script');
+                    e.async = true;
+                    e.src = document.location.protocol +
+                        '//connect.facebook.net/en_US/all.js';
+                    document.getElementById('fb-root').appendChild(e);
+                    }());
+                </script>
+
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                    $('#share_button').click(function(e) {
+                        e.preventDefault();
+                        FB.ui({
+                        method: 'feed',
+                        name: 'This is the content of the "name" field.',
+                        link: 'https://github.com/cipEpic',
+                        picture: 'header.jpg',
+                        caption: 'Top 3 reasons why you should care about your finance',
+                        description: "What happens when you don't take care of your finances? Just look at our country -- you spend irresponsibly, get in debt up to your eyeballs, and stress about how you're going to make ends meet. The difference is that you don't have a glut of taxpayers…",
+                        message: ""
+                        });
+                    });
+                    });
+                </script>
+
+
+                <!-- DOC FROM FACEBOOK -->
+                <!-- <h1>Sharing using FB.ui() Dialogs</h1>
+
+                <p>Below are some simple examples of how to use UI dialogs in a web page.</p>
+
+                <h3>Sharing Links</h3>
+
+                <div id="shareBtn" class="btn btn-success clearfix">Share Dialog</div>
+
+                <p>The Share Dialog enables you to share links to a person's profile without them having to use Facebook Login. <a href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Read our Share Dialog guide</a> to learn more about how it works.</p>
+
+                <script>
+                document.getElementById('shareBtn').onclick = function() {
+                FB.ui({
+                    display: 'popup',
+                    method: 'share',
+                    href: 'https://developers.facebook.com/docs/',
+                }, function(response){});
+                }
+                </script>
+
+                <h3>Publishing Open Graph Stories</h3>
+
+                <p>The Share Dialog can also be used to publish Open Graph stories without using Facebook Login or the Graph API. <a href="https://developers.facebook.com/docs/sharing/reference/share-dialog">Read our Share Dialog guide</a> to learn more about how it works.</p>
+
+                <div id="ogBtn" class="btn btn-success clearfix">Simple OG Dialog</div>
+
+                <script>
+                document.getElementById('ogBtn').onclick = function() {
+                FB.ui({
+                    display: 'popup',
+                    method: 'share_open_graph',
+                    action_type: 'og.likes',
+                    action_properties: JSON.stringify({
+                        object:'https://developers.facebook.com/docs/',
+                    })
+                }, function(response){});
+                }
+                </script>
+
+                <h3>Sending App Requests</h3>
+
+                <p><a href="https://developers.facebook.com/docs/games/requests/">Requests</a> can be sent by any Facebook Apps that are categorised as Games and have a Canvas, iOS, or Android implementation. The JavaScript SDK enables web Canvas games to send requests. <a href="https://developers.facebook.com/docs/games/requests/">Read our guide to Requests</a> to learn more and see more complex examples that you could use.</p>
+
+                <div id="requestsBtn" class="btn btn-success clearfix">Basic Request Dialog</div>
+
+                <script>
+                document.getElementById('requestsBtn').onclick = function() {
+                FB.ui({method: 'apprequests',
+                    message: 'This is a test message for the requests dialog.'
+                }, function(data) {
+                    Log.info('App Requests Response', data);
+                });
+                }
+                </script> -->
+
 
             <!-- Main content -->
             <section class="content">
