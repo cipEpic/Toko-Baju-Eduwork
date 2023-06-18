@@ -38,59 +38,7 @@
                     </div>
                 </div><!-- /.container-fluid -->
             </section>
-            
-                                  
-            <!-- <script>
-            // Load the Facebook SDK asynchronously
-            (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=YOUR_APP_ID&autoLogAppEvents=1";
-                fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-
-            // Initialize the SDK
-            window.fbAsyncInit = function() {
-                FB.init({
-                appId      : '265490552822190',
-                cookie     : true,
-                xfbml      : true,
-                version    : 'v12.0'
-                });
-
-                // Check if the user is already logged in
-                FB.getLoginStatus(function(response) {
-                if (response.status === 'connected') {
-                    // User is logged in and authorized
-                    sharePost();
-                } else {
-                    // User is not logged in, prompt for login
-                    FB.login(function(response) {
-                    if (response.authResponse) {
-                        // User logged in and authorized
-                        sharePost();
-                    } else {
-                        // User cancelled login or did not authorize
-                        console.log('User cancelled login or did not fully authorize.');
-                    }
-                    });
-                }
-                });
-            };
-
-            // Function to share the post
-            function sharePost() {
-                var message = 'Hello, this is a shared post from localhost!';
-                FB.api('/me/feed', 'post', { message: message }, function(response) {
-                if (!response || response.error) {
-                    console.log('Error occurred while sharing the post.');
-                } else {
-                    console.log('Post shared successfully!');
-                }
-                });
-            }
-            </script> -->
+    
 
             <!-- Load Facebook SDK for JavaScript -->
             <div id="fb-root"></div>
@@ -118,12 +66,12 @@
                         e.preventDefault();
                         FB.ui({
                         method: 'feed',
-                        name: 'This is the content of the "name" field.',
-                        link: 'https://github.com/cipEpic',
-                        picture: 'header.jpg',
-                        caption: 'Top 3 reasons why you should care about your finance',
-                        description: "What happens when you don't take care of your finances? Just look at our country -- you spend irresponsibly, get in debt up to your eyeballs, and stress about how you're going to make ends meet. The difference is that you don't have a glut of taxpayers…",
-                        message: ""
+                        // name: '-',
+                        link: 'https://github.com/cipEpic'
+                        // picture: 'header.jpg',
+                        // caption: '-',
+                        // description: "-",
+                        // message: ""
                         });
                     });
                     });
